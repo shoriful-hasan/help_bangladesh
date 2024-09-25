@@ -1,13 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
 </head>
 <body>
-    
-<h2>bangladesh is my country</h2>
+
+    <!-- header code here  -->
+    <div class="navbar p-8 "  style="background-color: rgb(249, 247, 243);">
+        <div class="navbar-start">
+       
+          <a class="btn btn-ghost text-xl" href="./index.html" style="background-color: rgb(180, 244, 97);">Blog</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+         <div class="flex items-center gap-3">
+           <div><img src="./images/logo.png" alt=""></div>
+           <div><h3 class="text-xl text-b">Donate Bangladesh</h3>
+          
+          </div>
+
+         </div>
+        </div>
+        <div class="navbar-end">
+          <div><img src="./images/coin.png" alt=""></div>
+        </div>
+        <div>
+          <p id="main_balance">5500tk</p>
+        </div>
+   
+
+      </div>
+
+
+<!-- accordion code start here -->
+<div class="max-w-screen-lg mx-auto mt-6">
+
+    <div class="mt-2 mb-2"><h1 class="text-4xl font-bold">FAQ section </h1></div>
+
+    <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">What is JavaScript?</div>
+        <div class="collapse-content">
+          <p>
+            JavaScript is a dynamic, high-level, interpreted programming language commonly used for web development. It allows you to implement complex features on web pages, such as dynamic content, interactive forms, animations, and more. It can be used on both the client-side (in the browser) and server-side (with environments like Node.js).
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">What is the difference between var, let, and const in JavaScript?</div>
+        <div class="collapse-content">
+          <p>var: Declares a variable, is function-scoped, and can be re-declared or updated. It does not have block-level scope and is hoisted.
+            let: Declares a block-scoped variable that can be updated but not re-declared within the same scope. It is not hoisted.
+            const: Declares a block-scoped, read-only variable. It must be initialized at the time of declaration and cannot be reassigned. However, objects declared with const can still have their properties modified.</p>
+        </div>
+      </div>
+
+
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium"> What is a closure in JavaScript?</div>
+        <div class="collapse-content">
+          <p>
+
+            A closure is a feature where an inner function has access to the outer (enclosing) function’s variables. Closures allow functions to "remember" the environment they were created in, even after the outer function has finished executing.
+
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">What is the DOM?</div>
+        <div class="collapse-content">
+          <p>
+
+            The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage as a tree of objects, where each node is an object representing part of the document (like elements, text, or attributes). JavaScript can be used to manipulate the DOM to change the content, structure, and style of a webpage.
+
+
+          </p>
+        </div>
+      </div>
+
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium"> How do you select an element by its ID in the DOM?</div>
+        <div class="collapse-content">
+          <p>
+            You can select an element by its ID using the getElementById method. This method returns a reference to the first element with the specified ID
+
+
+
+          </p>
+        </div>
+      </div>
+
+
+</div>
+
+
+
+
 
 </body>
 </html>
